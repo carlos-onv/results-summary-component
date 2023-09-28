@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+    .your-result {
+        background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+    }
+    .circle {
+        background: var(--Gradient-2, linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%));
+    }
+    .summary-row {
+        @apply w-[288px] h-[56px] rounded-xl flex items-center text-lg pl-4 pr-4 mb-4 w-full;
+        border-radius: 12px;
+      
+    }
+    .summary-row--reaction {
+        --red-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55;
+        background: var(--red-95-white);
+        @apply text-[#F55];
+       }
+       .summary-row--memory{
+        --yellow-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E;
+        background: var(--yellow-95-white);
+        @apply text-[#FFB21E];
+       }
+
+       .summary-row--verbal {
+        background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
+        @apply text-[#00BB8F];
+        }
+
+        .summary-row--visual { 
+            background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);
+            @apply text-[#1125D6];
+        }
+
+    .score {
+        @apply text-[#303B59] font-bold;
+    }
+    .score-100 {
+        @apply text-[#303B59];
+    }
+
+    .summary-button:hover {
+        background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+    }
+  }
